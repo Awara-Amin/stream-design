@@ -1,0 +1,100 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  color:white;
+  padding: 20px 15px 40px 15px;
+}
+
+.upper-part{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headline{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fa-play{
+  color: white;
+  font-size: 2rem;
+}
+a {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.text{
+  text-align: center;
+  font-style: italic;
+}
+
+p{
+  max-width: 200px;
+  font-size: 20px;
+  margin-left: 100px;
+  /* color:red; */
+}
+.position{
+  margin-left: 130px;
+}
+
+@media screen and (max-width:768px) {
+  .upper-part{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+  }
+
+
+  /* .upper-part a {
+    display: none;
+  } */
+
+ /* practice */
+  /* .upper-part :not(div) {
+    display: none;
+  } */
+
+  /* .upper-part :not(.headline) {
+    display: none;
+  } */
+
+  .upper-part :first-child {
+    display: none;
+  }
+
+
+
+  .headline i h1{
+    font-size: 2rem;
+
+
+  }
+  .headline{
+    margin: 15px 0;
+  }
+
+  .row{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+.row h1{
+  width: 90%;
+}
+}
